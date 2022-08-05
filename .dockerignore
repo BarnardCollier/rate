@@ -1,0 +1,7 @@
+logs/
+makefile
+passwords.*
+*.tar
+.git
+.cache
+dockerfile
