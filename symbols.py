@@ -30,7 +30,6 @@ def find_ticker(symbol, currency):
 def get_tickers():
     s = read_account_info(globals.account_file)
     t = read_transactions(globals.transactions_file)
-    #d = s.append(t)
     d = pd.concat((s,t))
     d = d[d['Symbol'].notnull()]
     d = d.dropna()
